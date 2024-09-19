@@ -6,6 +6,7 @@
   <link href="https://cdn.jsdelivr.net/npm/flowbite@2.5.1/dist/flowbite.min.css" rel="stylesheet" />
   <script src="https://cdn.tailwindcss.com"></script>
   <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   <style>
 
   </style>
@@ -15,29 +16,42 @@
 
   <!-- header -->
 
-  <header class="sticky top-0 bg-black stext-gray-600 body-font">
-    <div class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
-      <a class="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0">
-        <img
-          src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/a3b33441-dd70-463e-b1e5-3e3b9f36a31e/dgfkrbd-d7ef2717-1d02-49e7-ad85-c771dea575d5.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcL2EzYjMzNDQxLWRkNzAtNDYzZS1iMWU1LTNlM2I5ZjM2YTMxZVwvZGdma3JiZC1kN2VmMjcxNy0xZDAyLTQ5ZTctYWQ4NS1jNzcxZGVhNTc1ZDUucG5nIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.aaQ80EmnKP3CEaRqHZspFWr1D-THegiW0ZCsJq4k7qw"
-          fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-          class="w-10 h-10 text-white p-1rounded-full">
-        <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path>
-        </svg>
-        <span class="ml-3 text-xl text-white">Skibidi Grup</span>
-      </a>
-      <nav class="md:ml-auto md:mr-auto flex flex-wrap items-center text-base justify-center text-balck">
-        <button type="button" class="py-2.5 px-9 me-2 mb-2  font-medium text-gray-900 focus:outline-none bg-white rounded-full border border-gray-200 hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-4 focus:ring-gray-100 dark:focus:ring-gray-700 dark:bg-gray-100 dark:text-gray-800 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700">Home</button>
-        <button type="button" class="py-2.5 px-9 me-2 mb-2 font-medium text-gray-900 focus:outline-none bg-white rounded-full border border-gray-200 hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-4 focus:ring-gray-100 dark:focus:ring-gray-700 dark:bg-gray-100 dark:text-gray-800 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700">Start</button>
+ 
 
-
-      </nav>
-        <button type="button" class="py-2.5 px-3 me-2 mb-2 font-medium text-gray-900 focus:outline-none bg-white rounded-full border border-gray-200 hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-4 focus:ring-gray-100 dark:focus:ring-gray-700 dark:bg-gray-100 dark:text-gray-800 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700">Help</button>
-          <path d="M5 12h14M12 5l7 7-7 7"></path>
+<nav class="bg-white dark:bg-black fixed w-full z-20 top-0 start-0 border-b border-black dark:border-black">
+  <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+  <a href="http://127.0.0.1:5500/companyprofile.html#" class="flex items-center space-x-3 rtl:space-x-reverse">
+      <img src="https://characterai.io/i/200/static/avatars/uploaded/2023/11/25/2-eGYTsJzLGabXzm2BWfukqaaPxF_3KkItH--myTL88.webp" class="h-8" alt="Flowbite Logo">
+      <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">Skibidi</span>
+  </a>
+  <div class="flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse">
+      <button type="button" class="text-black bg-black hover:bg-white focus:ring-4 focus:outline-none focus:ring-gray font-medium rounded-lg text-sm px-4 py-2 text-center dark:bg-white dark:hover:bg-gray-400 dark:focus:ring-gray-800">Get started</button>
+      <button data-collapse-toggle="navbar-sticky" type="button" class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-800 rounded-lg md:hidden hover:bg-white focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="navbar-sticky" aria-expanded="false">
+        <span class="sr-only">Open main menu</span>
+        <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
+            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1h15M1 7h15M1 13h15"/>
         </svg>
-      </button>
-    </div>
-  </header>
+    </button>
+  </div>
+  <div class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1" id="navbar-sticky">
+    <ul class="flex flex-col p-4 md:p-0 mt-4 font-medium border border-black rounded-lg bg-gray-50 md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-white dark:bg-black md:dark:bg-black dark:border-black">
+      <li>
+        <a href="#" class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Home</a>
+      </li>
+      <li>
+        <a href="#" class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">About</a>
+      </li>
+      <li>
+        <a href="#" class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Services</a>
+      </li>
+      <li>
+        <a href="#" class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Contact</a>
+      </li>
+    </ul>
+  </div>
+  </div>
+</nav>
+
 
   
 
@@ -47,8 +61,8 @@
     <section class="text-gray-600 body-font">
       <div class="container mx-auto flex px-5 py-24 items-center justify-center flex-col">
         <div class="text-center lg:w-2/3 w-full pt-24 mt-24">
-          <h1 class=" sm:text-8xl text-7xl mt-12 font-semibold text-gray-100">Selamat Datang Di Broker Skibidi grup</h1>
-          <p class="mb-8 leading-relaxed text-4xl text-bold text-gray-100">Web site broker saham terbaik 2024</p>
+          <h1 class=" sm:text-8xl text-7xl mt-12 font-semibold text-white">Selamat Datang Di Broker Skibidi grup</h1>
+          <p class="mb-8 leading-relaxed text-4xl text-bold text-white">Web site broker saham terbaik 2024</p>
           <div class="flex justify-center">
             
           </div>
@@ -58,47 +72,62 @@
   </div>
 
   
-<!--  -->
-<section class="text-gray-600">
+
+
+    <!--  -->
+
+    <section class="bg-white dark:bg-black">
+      <div class="gap-16 items-center py-8 px-4 mx-auto max-w-screen-xl lg:grid lg:grid-cols-2 lg:py-16 lg:px-6">
+          <div class="font-light text-gray-500 sm:text-lg dark:text-gray-400">
+              <h2 class="mb-20 mt-24 text-7xl tracking-tight font-extrabold text-gray-900 dark:text-white">Berinvestasi dengan tekonologi kami dan dapatkan profit yang memuaskan</h2>
+
+          </div>
+          <div class="grid grid-cols-2 gap-4 mt-8">
+              <img class="w-full rounded-lg mt-24"  src="https://images.unsplash.com/photo-1642142783250-d1bef1dafbc9?q=80&w=3270&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="office content 1">
+              <img class="mt-2 rounded-lg w-full lg:mt-10 " src="https://images.unsplash.com/photo-1642142784358-21bba9293a79?q=80&w=3270&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="office content 2">
+          </div>
+      </div>
+      
+      <!--  -->
+      <section class="bg-white">
+        <div class="gap-8 items-center py-8 px-4 mx-auto max-w-screen-xl xl:gap-16 md:grid md:grid-cols-2 sm:py-16 lg:px-6 ">
+            <img class="w-full dark:hidden mt-24 mb-20" src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/cta/cta-dashboard-mockup.svg" alt="dashboard image">
+            <img class="w-full hidden dark:block mt-24 mb-20" src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/cta/cta-dashboard-mockup-dark.svg" alt="dashboard image">
+            <div class="mt-4 md:mt-0">
+                <h2 class="mb-20 mt-24 text-8xl tracking-tight font-extrabold text-black ">Tampilan UI dan UX yang Canggih</h2>
+                </a>
+            </div>
+        </div>
+    </section>
+  </section>
+  
+  
+  <!--  -->
+
+  <section class="bg-white">
     <div class="flex flex-wrap -m-4 text-center mt-24">
       <div class="p-4 md:w-1/4 sm:w-1/2 w-full">
         <div class="px-4 py-6 rounded-lg">
-          <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="text-black w-12 h-12 mb-3 inline-block" viewBox="0 0 24 24">
-            <path d="M8 17l4 4 4-4m-4-5v9"></path>
-            <path d="M20.88 18.09A5 5 0 0018 9h-1.26A8 8 0 103 16.29"></path>
-          </svg>
-          <h2 class="title-font font-medium text-3xl text-gray-900">40+</h2>
-          <p class="leading-relaxed">juta orang downloads aplikasi kami</p>
+          <h2 class="title-font font-medium text-6xl text-gray-900">40+</h2>
+          <p class="leading-relaxed text-xl font-medium">juta orang downloads aplikasi kami</p>
         </div>
       </div>
       <div class="p-4 md:w-1/4 sm:w-1/2 w-full">
         <div class="px-4 py-6 rounded-lg">
-          <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="text-black w-12 h-12 mb-3 inline-block" viewBox="0 0 24 24">
-            <path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"></path>
-            <circle cx="9" cy="7" r="4"></circle>
-            <path d="M23 21v-2a4 4 0 00-3-3.87m-4-12a4 4 0 010 7.75"></path>
-          </svg>
-          <h2 class="title-font font-medium text-3xl text-gray-900">29+</h2>
-          <p class="leading-relaxed">juta trader bergabung dengan kami</p>
+          <h2 class="title-font font-medium text-6xl text-gray-900">29+</h2>
+          <p class="leading-relaxed text-xl font-medium">juta trader bergabung dengan kami</p>
         </div>
       </div>
       <div class="p-4 md:w-1/4 sm:w-1/2 w-full">
         <div class="px-4 py-6 rounded-lg">
-          <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="text-black w-12 h-12 mb-3 inline-block" viewBox="0 0 24 24">
-            <path d="M3 18v-6a9 9 0 0118 0v6"></path>
-            <path d="M21 19a2 2 0 01-2 2h-1a2 2 0 01-2-2v-3a2 2 0 012-2h3zM3 19a2 2 0 002 2h1a2 2 0 002-2v-3a2 2 0 00-2-2H3z"></path>
-          </svg>
-          <h2 class="title-font font-medium text-3xl text-gray-900">1</h2>
-          <p class="leading-relaxed">juta album tersedia saat anda trading</p>
+          <h2 class="title-font font-medium text-6xl text-gray-900">500+</h2>
+          <p class="leading-relaxed text-xl font-medium">ratus lebih pasar saham dan cyripto tersidia</p>
         </div>
       </div>
       <div class="p-4 md:w-1/4 sm:w-1/2 w-full">
         <div class="px-12 py-6 rounded-lg">
-          <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="text-black w-12 h-12 mb-3 inline-block" viewBox="0 0 24 24">
-            <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
-          </svg>
-          <h2 class="title-font font-medium text-3xl text-gray-900">100%</h2>
-          <p class="leading-relaxed">Legal</p>
+          <h2 class="title-font font-medium text-6xl text-gray-900">100%</h2>
+          <p class="leading-relaxed text-xl font-medium">aman dan terdaftar di ojk</p>
         </div>
       </div>
       <div class="container px-5 py-24 mx-auto"></div>
@@ -112,72 +141,27 @@
       </div>
     </div>
 
-    <!--  -->
-    <section class="bg-white dark:bg-black">
-      <div class="gap-16 items-center py-8 px-4 mx-auto max-w-screen-xl lg:grid lg:grid-cols-2 lg:py-16 lg:px-6 mt-28 mb-20">
-          <div class="font-light text-gray-500 sm:text-lg dark:text-gray-400">
-              <h2 class="mb-4 text-6xl tracking-tight font-extrabold text-gray-900 dark:text-white">Berinvestasi dengan tekonologi kami dan dapatkan profit yang memuaskan</h2>
 
-          </div>
-          <div class="grid grid-cols-2 gap-4 mt-8">
-              <img class="w-full rounded-lg" src="https://images.unsplash.com/photo-1642142783250-d1bef1dafbc9?q=80&w=3270&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="office content 1">
-              <img class="mt-4 w-full lg:mt-10 rounded-lg" src="https://images.unsplash.com/photo-1627253781598-63b98c51da42?q=80&w=3387&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="office content 2">
-          </div>
-      </div>
-      <!--  -->
-      <section class="bg-white dark:bg-black mb-20">
-        <div class="gap-8 items-center py-8 px-4 mx-auto max-w-screen-xl xl:gap-16 md:grid md:grid-cols-2 sm:py-16 lg:px-6">
-            <img class="w-full dark:hidden" src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/cta/cta-dashboard-mockup.svg" alt="dashboard image">
-            <img class="w-full hidden dark:block" src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/cta/cta-dashboard-mockup-dark.svg" alt="dashboard image">
-            <div class="mt-4 md:mt-0">
-                <h2 class="mb-4 text-6xl tracking-tight font-extrabold text-gray-900 dark:text-white">Belum pernah belajar trading? tenang kami neyedian akun bemo untuk anda</h2>
-                <a href="#" class="inline-flex items-center text-white bg-primary-700 hover:bg-primary-800 focus:ring-4 focus:ring-primary-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:focus:ring-primary-900">
-                   Buat akun demo
-                    <svg class="ml-2 -mr-1 w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
-                </a>
-            </div>
-        </div>
-    </section>
-  </section>
-  
-  
-  
-  <!--  -->
-  <section class="text-gray-600 body-font">
-    <div class="container mx-auto flex px-2 py-4 items-center justify-center flex-col">
-      <img class="lg:w-2/6 md:w-3/6 w-5/6 object-cover object-center rounded" alt="hero" src="https://www.gatesfoundation.org/-/media/gfo/3about/3people/ga_warren_buffett_20210203_0001.jpg?rev=68ac5cb3b9db4b34aeb5e199666c3149">
-      </div>
-    </div>
-  </section>
-  <section class="text-gray-600 body-font">
-    <div class="container px-5 py-24 mx-auto">
-      <div class="xl:w-1/2 lg:w-3/4 w-full mx-auto text-center">
-        <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="inline-block w-8 h-8 text-gray-400 mb-8" viewBox="0 0 975.036 975.036">
-          <path d="M925.036 57.197h-304c-27.6 0-50 22.4-50 50v304c0 27.601 22.4 50 50 50h145.5c-1.9 79.601-20.4 143.3-55.4 191.2-27.6 37.8-69.399 69.1-125.3 93.8-25.7 11.3-36.8 41.7-24.8 67.101l36 76c11.6 24.399 40.3 35.1 65.1 24.399 66.2-28.6 122.101-64.8 167.7-108.8 55.601-53.7 93.7-114.3 114.3-181.9 20.601-67.6 30.9-159.8 30.9-276.8v-239c0-27.599-22.401-50-50-50zM106.036 913.497c65.4-28.5 121-64.699 166.9-108.6 56.1-53.7 94.4-114.1 115-181.2 20.6-67.1 30.899-159.6 30.899-277.5v-239c0-27.6-22.399-50-50-50h-304c-27.6 0-50 22.4-50 50v304c0 27.601 22.4 50 50 50h145.5c-1.9 79.601-20.4 143.3-55.4 191.2-27.6 37.8-69.4 69.1-125.3 93.8-25.7 11.3-36.8 41.7-24.8 67.101l35.9 75.8c11.601 24.399 40.501 35.2 65.301 24.399z"></path>
-        </svg>
-        <p class="leading-relaxed text-lg">Sebagai Founder, saya sangat bangga dengan website baru kami. Platform ini dirancang dengan fokus pada kenyamanan pengguna dan fitur-fitur canggih yang mendukung kebutuhan modern. Tim kami telah berupaya keras menciptakan pengalaman yang intuitif, responsif, dan aman untuk semua pengguna. Kami percaya bahwa website ini akan menjadi fondasi kuat bagi pertumbuhan bisnis kami, menghubungkan pelanggan dengan layanan terbaik yang kami tawarkan. Terima kasih telah mempercayai kami sebagai mitra Anda. Kami selalu siap memberikan yang terbaik!</p>
-        <span class="inline-block h-1 w-10 rounded bg-black mt-8 mb-6"></span>
-        <h2 class="text-gray-900 font-medium title-font tracking-wider text-sm">WAREEN BUFFETT</h2>
-        <p class="text-gray-500">Founder Skibidi Grup</p>
-      </div>
-    </div>
-  </section>
 
 <!--  -->
 <section class="bg-white dark:bg-black">
   <div class="grid max-w-screen-xl px-4 py-8 mx-auto lg:gap-8 xl:gap-0 lg:py-16 lg:grid-cols-12">
-      <div class="mr-auto place-self-center lg:col-span-7">
-          <h1 class="max-w-5xl mb-6 text-7xl font-extrabold tracking-tight leading-none md:text-6xl xl:text-8xl dark:text-white">Investasi tanpa batas di mana saja</h1>
+      <div class="mr-auto place-self-center lg:col-span-7 mb-20 mt-24">
+          <h1 class="max-w-5xl text-7xl font-extrabold tracking-tight leading-none md:text-6xl xl:text-8xl dark:text-white">Investasi tanpa batas di mana saja</h1>
           <p class="max-w-2xl mb-6 font-light text-gray-500 lg:mb-8 md:text-lg lg:text-xl dark:text-gray-400"></p>
           <a href="#" class="inline-flex items-center justify-center px-5 py-3 mr-3 text-base font-medium text-center text-white rounded-lg bg-primary-700 hover:bg-primary-800 focus:ring-4 focus:ring-primary-300 dark:focus:ring-primary-900">
          </svg>
           </a>
       </div>
-      <div class="hidden lg:mt-0 lg:col-span-5 lg:flex">
+      <div class="hidden lg:mt-0 lg:col-span-5 lg:flex mt-24 mb-20">
           <img src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/hero/phone-mockup.png" alt="mockup">
       </div>                
   </div>
 </section>
+<!--  -->
+
+
+
 <!--  -->
 <section class="bg-white dark:bg-black">
   <div class="py-8 px-4 mx-auto max-w-screen-xl text-center lg:py-16 lg:px-12">
@@ -228,18 +212,45 @@
 </section>
 
 
+ <!--  -->
+
+ <section class="text-gray-600 body-font">
+  <div class="container mx-auto flex px-2 py-4 items-center justify-center flex-col mt-24">
+    <img class="lg:w-2/6 md:w-3/6 w-5/6 object-cover object-center rounded" alt="hero" src="https://www.gatesfoundation.org/-/media/gfo/3about/3people/ga_warren_buffett_20210203_0001.jpg?rev=68ac5cb3b9db4b34aeb5e199666c3149">
+    </div>
+  </div>
+</section>
+<section class="text-gray-600 body-font">
+  <div class="container px-5 py-24 mx-auto">
+    <div class="xl:w-1/2 lg:w-3/4 w-full mx-auto text-center">
+      <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="inline-block w-8 h-8 text-gray-400 mb-8" viewBox="0 0 975.036 975.036">
+        <path d="M925.036 57.197h-304c-27.6 0-50 22.4-50 50v304c0 27.601 22.4 50 50 50h145.5c-1.9 79.601-20.4 143.3-55.4 191.2-27.6 37.8-69.399 69.1-125.3 93.8-25.7 11.3-36.8 41.7-24.8 67.101l36 76c11.6 24.399 40.3 35.1 65.1 24.399 66.2-28.6 122.101-64.8 167.7-108.8 55.601-53.7 93.7-114.3 114.3-181.9 20.601-67.6 30.9-159.8 30.9-276.8v-239c0-27.599-22.401-50-50-50zM106.036 913.497c65.4-28.5 121-64.699 166.9-108.6 56.1-53.7 94.4-114.1 115-181.2 20.6-67.1 30.899-159.6 30.899-277.5v-239c0-27.6-22.399-50-50-50h-304c-27.6 0-50 22.4-50 50v304c0 27.601 22.4 50 50 50h145.5c-1.9 79.601-20.4 143.3-55.4 191.2-27.6 37.8-69.4 69.1-125.3 93.8-25.7 11.3-36.8 41.7-24.8 67.101l35.9 75.8c11.601 24.399 40.501 35.2 65.301 24.399z"></path>
+      </svg>
+      <p class="leading-relaxed text-lg">Sebagai Founder, saya sangat bangga dengan website baru kami. Platform ini dirancang dengan fokus pada kenyamanan pengguna dan fitur-fitur canggih yang mendukung kebutuhan modern. Tim kami telah berupaya keras menciptakan pengalaman yang intuitif, responsif, dan aman untuk semua pengguna. Kami percaya bahwa website ini akan menjadi fondasi kuat bagi pertumbuhan bisnis kami, menghubungkan pelanggan dengan layanan terbaik yang kami tawarkan. Terima kasih telah mempercayai kami sebagai mitra Anda. Kami selalu siap memberikan yang terbaik!</p>
+      <span class="inline-block h-1 w-10 rounded bg-black mt-8 mb-6"></span>
+      <h2 class="text-gray-900 font-medium title-font tracking-wider text-sm">WAREEN BUFFETT</h2>
+      <p class="text-gray-500">Founder Skibidi Grup</p>
+    </div>
+  </div>
+</section>
+
 <!--  -->
-<footer class="text-black body-font mt-9"></footer>
+
+<footer class="text-black body-font"></footer>
   <div class="container px-5 py-24 mx-auto">
     <div class="flex flex-wrap md:text-left text-center -mb-10 -mx-4">
       <div class="lg:w-1/6 md:w-1/2 w-full px-4">
         <h2 class="title-font font-medium text-gray-900 tracking-widest text-sm mb-3"></h2>
         <nav class="list-none mb-10">
     </div>
+
+    
+    
   </div>
   <div class="border-t border-black">
     <div class="container px-5 py-8 flex flex-wrap mx-auto items-center">
       <div class="flex md:flex-nowrap flex-wrap justify-center items-end md:justify-start">
+
         <div class="relative sm:w-64 w-40 sm:mr-4 mr-2">
           <label for="footer-field" class="leading-7 text-sm text-gray-600">KOTAK SARAN</label>
           <input type="text" id="footer-field" name="footer-field" class="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:ring-2 focus:bg-transparent focus:ring-indigo-200 focus:border-indigo-500 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
@@ -288,6 +299,10 @@
 
 <script src="script.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/flowbite@2.5.1/dist/flowbite.min.js"></script>
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
 </body>
 
 <html>
